@@ -1,6 +1,6 @@
 # Dashboard App
 
-this is the todo app where u can log in and make todo list
+this is the dashboard where u can see user data
 <br/>
 
 
@@ -14,7 +14,7 @@ step 5: click the link belove<br/>
 ## click the link below to watch demo
 <div align="center">
 <pre>
-<a href="https://youtu.be/DP7f3NJdHf0">https://youtu.be/DP7f3NJdHf0</a>
+<a href="https://youtu.be/fOIlYCcD4jQ">https://youtu.be/fOIlYCcD4jQ</a>
 </pre>
 </div>
 
