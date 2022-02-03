@@ -50,7 +50,7 @@ step 5: click the link belove<br/>
 watch video demo below
 
 
-[![Watch the video](https://img.youtube.com/vi/DP7f3NJdHf0/maxresdefault.jpg)](https://youtu.be/DP7f3NJdHf0)
+[![Watch the video](https://img.youtube.com/vi/fOIlYCcD4jQ/maxresdefault.jpg)](https://youtu.be/fOIlYCcD4jQ)
 
 <img src="./1.PNG">
 <img src="./2.PNG">
