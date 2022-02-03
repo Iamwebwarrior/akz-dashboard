@@ -1,0 +1,38 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.userMain{
+    display: flex;
+}
+.mainLeft{
+    flex: 4;
+    background-color: aqua;
+    padding: 8px;
+    border-radius: 8px;
+}
+.mainRight{
+    flex: 8;
+    background-color: bisque;
+   
+    padding: 8px;
+    border-radius: 8px;
+}
+.userInfo{
+    display: flex;
+}
+.userimg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 3px;
+    margin-right: 5px;
+}
+.accountDetail,.addressDetail{
+    margin: 6px 0px;
+}
+.editUser{
+    font-size: 25px;
+    font-weight: 300;
+}

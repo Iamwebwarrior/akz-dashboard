@@ -1,0 +1,132 @@
+import { Container, makeStyles, Typography } from "@material-ui/core";
+import {
+  Bookmark,
+  List,
+  ExitToApp,
+  Home,
+  Person,
+  PhotoCamera,
+  PlayCircleOutline,
+  Settings,
+  Storefront,
+  TabletMac,
+} from "@material-ui/icons";
+
+const useStyles = makeStyles((theme) => ({
+  container: {
+    height: "100vh",
+    color: "white",
+    paddingTop: theme.spacing(10),
+    backgroundColor: theme.palette.primary.main,
+    position: "sticky",
+    top: 0,
+    [theme.breakpoints.up("sm")]: {
+      backgroundColor: "white",
+      color: "#555",
+      border: "1px solid #ece7e7",
+    },
+  },
+  item: {
+    display: "flex",
+    alignItems: "center",
+    fontSize:"20px",
+    marginBottom: theme.spacing(4),
+    [theme.breakpoints.up("sm")]: {
+      marginBottom: theme.spacing(3),
+      cursor: "pointer",
+    },
+  },
+  icon: {
+    marginRight: theme.spacing(1),
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "18px",
+    },
+  },
+  text: {
+    fontWeight: 500,
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
+  },
+  img1:{
+    width:50,
+    height:50,
+    borderRadius:"50%",
+  },
+  itemimg:{
+    display: "flex",
+    flexDirection:"column",
+    alignItems: "center",
+   justifyContent:"center",
+  },
+  text1: {
+    fontWeight: 300,
+    margin:"4px 0px",
+    fontSize:"19px",
+    
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
+  },
+}));
+
+const Leftbar = () => {
+  const classes = useStyles();
+  return (
+    <Container className={classes.container}>
+      <div className={classes.item}>
+        <div className={classes.itemimg}>
+        <img className={classes.img1} src="https://images.pexels.com/photos/8647814/pexels-photo-8647814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+           alt="" srcset=""/>
+           <h5>name</h5>
+           <h6>email@gmail.com</h6>
+           
+        </div>
+      </div>
+      <hr/>
+      <div className={classes.item}>
+        <Home className={classes.icon} />
+        <Typography className={classes.text}>Chats</Typography>
+      </div>
+      <div className={classes.item}>
+        <Person className={classes.icon} />
+        <Typography className={classes.text}>Calender</Typography>
+      </div>
+      <div className={classes.item}>
+        <List className={classes.icon} />
+        <Typography className={classes.text}>contact</Typography>
+      </div>
+      <div className={classes.item}>
+        <PhotoCamera className={classes.icon} />
+        <Typography className={classes.text}>email</Typography>
+      </div>
+      <div className={classes.item}>
+        <PlayCircleOutline className={classes.icon} />
+        <Typography className={classes.text}>Todo</Typography>
+      </div>
+      <Typography className={classes.text1}>UI elements</Typography>
+      <div className={classes.item}>
+        <TabletMac className={classes.icon} />
+        <Typography className={classes.text}>Apps</Typography>
+      </div>
+      <div className={classes.item}>
+        <Bookmark className={classes.icon} />
+        <Typography className={classes.text}>Collections</Typography>
+      </div>
+      <div className={classes.item}>
+        <Storefront className={classes.icon} />
+        <Typography className={classes.text}>Market Place</Typography>
+      </div>
+      <div className={classes.item}>
+        <Settings className={classes.icon} />
+        <Typography className={classes.text}>Settings</Typography>
+      </div>
+      <div className={classes.item}>
+        <ExitToApp className={classes.icon} />
+        <Typography className={classes.text}>Logout</Typography>
+      </div>
+    </Container>
+  );
+};
+
+export default Leftbar;
